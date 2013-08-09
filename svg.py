@@ -17,7 +17,7 @@ surface = cairo.ImageSurface.create_for_data(
 pygame.init()
 window = pygame.display.set_mode((WIDTH, HEIGHT))
 window.fill(THECOLORS['white'])
-svg = rsvg.Handle(file="test.svg")
+svg = rsvg.Handle(file="d1.svg")
 ctx = cairo.Context(surface)
 svg.render_cairo(ctx)
 

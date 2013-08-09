@@ -15,8 +15,8 @@ class SketchKnowledgeBase(object):
     def __init__(self):
         super(SketchKnowledgeBase, self).__init__()
         self.entities = {}
-        self.relations = {}
-        # Reversed IS-A relations
+        self.actions = {}
+        # Reversed IS-A actions
         self.asi = {}
 
         self._idcounter = {}
@@ -29,24 +29,24 @@ class SketchKnowledgeBase(object):
             else:
                 self.asi[p] = [entity.name]
 
-    def add_relation(self, rel):
-        unqid = self._unique_rel_id(rel.name)
-        self.relations[unqid] = rel
-        for p in rel.isa:
-            punqid = self._unique_rel_id(p)
+    def add_action(self, act):
+        unqid = self._unique_act_id(act.name)
+        self.actions[unqid] = act
+        for p in act.isa:
+            punqid = self._unique_act_id(p)
             if p in self.asi:
                 self.asi[punqid].append(unqid)
             else:
                 self.asi[punqid] = [unqid]
 
-    def _unique_rel_id(self, relname):
-        if relname not in self._idcounter:
-            self._idcounter[relname] = -1
-        self._idcounter[relname] += 1
-        return relname + str(self._idcounter[relname])
+    def _unique_act_id(self, actname):
+        if actname not in self._idcounter:
+            self._idcounter[actname] = -1
+        self._idcounter[actname] += 1
+        return actname + str(self._idcounter[actname])
 
     def __str__(self):
-        return '(\n  ENTITIES:\n    ' + str(self.entities) + '\n  RELATIONS:\n    ' + str(self.relations) + '\n)\n'
+        return '(\n  ENTITIES:\n    ' + str(self.entities) + '\n  ACTIONS:\n    ' + str(self.actions) + '\n)\n'
 
 
 class SNEntity(object):
@@ -66,12 +66,12 @@ class SNEntity(object):
         return self.__repr__()
 
 
-class SNRelation(object):
+class SNAction(object):
     '''
-    Relation between 2 or more SketchNet entities
+    Action over SketchNet entities
     '''
     def __init__(self, name, components, sketch, isa=[], partof=[]):
-        super(SNRelation, self).__init__()
+        super(SNAction, self).__init__()
         self.name, self.components, self.sketch, self.isa, self.partof = \
             name, components, sketch, isa, partof
 

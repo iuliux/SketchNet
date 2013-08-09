@@ -52,11 +52,11 @@ if __name__ == '__main__':
         )
 
     # ---------------------------------------------------
-    # Relations
+    # Actions
     # ---------------------------------------------------
 
     # FLYING-CRASH(flying-thing, obstacle)
-    kb.add_relation(SNRelation(
+    kb.add_action(SNAction(
                 name='flying-crash',
                 components=['flying-thing', 'obstacle'],
                 sketch='',
@@ -65,7 +65,7 @@ if __name__ == '__main__':
         )
 
     # FLYING-CRASH(flying-thing, flying-thing)
-    kb.add_relation(SNRelation(
+    kb.add_action(SNAction(
                 name='flying-crash',
                 components=['flying-thing', 'flying-thing'],
                 sketch='',
