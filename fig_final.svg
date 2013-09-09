@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='ASCII' standalone='yes'?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1500px" height="1500px" viewbox="0 0 1500px 1500px">
   <g>
-    <g transform=" translate(500, 500) scale(0.523934070403) rotate(0.000000 0.000000 0.000000)"><!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+    <g transform=" translate(0, 0) scale(0.523934070403) rotate(0.000000 66.500000 373.500000)"><!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
 
  <g>
   <title>background</title>
@@ -18,7 +18,7 @@
   <line stroke="#000" stroke-width="1.5" id="MP_1_r" y2="374.5" x2="125.5" y1="373.5" x1="66.5"/>
  </g>
 </g>
-    <g transform=" translate(444.063561012, 166.519739535) scale(1.4760659296) rotate(45.000000 0.000000 0.000000)"><!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+    <g transform=" translate(-55.9364389884, -333.480260465) scale(1.4760659296) rotate(45.000000 61.500000 358.500000)"><!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
 
  <g>
   <title>background</title>
@@ -35,9 +35,5 @@
   <line stroke="#000" stroke-width="1.5" x1="61.5" y1="358.5" x2="22.29541" y2="319.29541" id="MP_1_u"/>
  </g>
 </g>
-  </g>
-  <g>
-    <text font-family="Verdana" font-size="32" font-weight="bold" x="25" y="20">A</text>
-    <text font-family="Verdana" font-size="32" font-weight="bold" x="305" y="20">B</text>
   </g>
 </svg>
