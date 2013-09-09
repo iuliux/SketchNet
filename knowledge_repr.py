@@ -59,8 +59,8 @@ class SNEntity(object):
             name, sketch, isa, partof
 
     def __repr__(self):
-        # TODO: strip str(self.isa) of ' characters
-        return '<SNE:' + self.name + '::' + str(self.isa) + '>'
+        # Strips str(self.isa) of ' characters
+        return '<SNE:' + self.name + '::' + str(self.isa).replace("'", "") + '>'
 
     def __str__(self):
         return self.__repr__()
@@ -76,8 +76,8 @@ class SNAction(object):
             name, components, sketch, isa, partof
 
     def __repr__(self):
-        # TODO: strip list reprs of ' characters
-        return '<SNR:' + self.name + '(' + str(self.components)[1:-1] + ')::' + str(self.isa) + '>'
+        # Strips list reprs of ' characters
+        return '<SNR:' + self.name + '(' + str(self.components)[1:-1].replace("'", "") + ')::' + str(self.isa).replace("'", "") + '>'
 
     def __str__(self):
         return self.__repr__()
