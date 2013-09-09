@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='ASCII' standalone='yes'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1500px" height="1500px" viewbox="0 0 1500px 1500px">
+  <g>
+    <g transform=" translate(500, 500) scale(0.523934070403) rotate(0.000000 0.000000 0.000000)"><!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path stroke="#000" id="svg_1" d="m28.127502,63.099213l0,0c0,-22.046158 27.182484,-39.91671 60.724075,-39.91671l27.604897,0l0,0l132.500053,0l248.436417,0c16.108215,0 31.556091,4.204855 42.94281,11.691696c11.386719,7.485519 17.791748,17.638336 17.791748,28.225014l0,99.792374l0,0l0,59.874451l0,0c0,22.046082 -27.192383,39.917557 -60.734558,39.917557l-248.436417,0l-173.098618,101.498932l40.598564,-101.498932l-27.604897,0c-33.541592,0 -60.724075,-17.871475 -60.724075,-39.917557l0,0l0,-59.874451l0,0l0,-99.792374z" stroke-width="1.5" fill="#fff"/>
+ </g>
+ <g>
+  <line stroke="#000" stroke-width="1.5" id="MP_1_u" y2="217.3" x2="66.5" y1="373.5" x1="66.5"/>
+  <line stroke="#000" stroke-width="1.5" id="MP_1_r" y2="374.5" x2="125.5" y1="373.5" x1="66.5"/>
+ </g>
+</g>
+    <g transform=" translate(444.063561012, 166.519739535) scale(1.4760659296) rotate(45.000000 0.000000 0.000000)"><!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_2" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#fff" stroke="#000" stroke-width="1.5" d="m137.30751,300.49249l0,-143.99995l0,0c0,-61.85172 71.49512,-112.00003 159.68745,-112.00003l0,0l0,0c42.35016,0 82.96841,11.80466 112.91522,32.80458c29.94708,21 46.76682,49.49233 46.76682,79.19545l0,15.99994l45.63052,0l-91.2554,64.00002l-91.24466,-64.00002l45.625,0l0,-15.99994c0,-26.50781 -30.64316,-48.0001 -68.4375,-48.0001l0,0l0,0c-37.79984,0 -68.43747,21.49229 -68.43747,48.0001l0,143.99995l-91.24997,0l-0.00002,0z" id="svg_1"/>
+ </g>
+ <g>
+  <line stroke="#000" stroke-width="1.5" x1="61.5" y1="358.5" x2="106.59989" y2="313.40011" id="MP_1_r"/>
+  <line stroke="#000" stroke-width="1.5" x1="61.5" y1="358.5" x2="22.29541" y2="319.29541" id="MP_1_u"/>
+ </g>
+</g>
+  </g>
+  <g>
+    <text font-family="Verdana" font-size="32" font-weight="bold" x="25" y="20">A</text>
+    <text font-family="Verdana" font-size="32" font-weight="bold" x="305" y="20">B</text>
+  </g>
+</svg>
