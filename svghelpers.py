@@ -27,8 +27,8 @@ def register_sketches(sk1, sk2, mp1=1, mp2=1):
                     up1[0][1]*fig2_normscale - up2[0][1]*fig1_normscale)
 
     # Get the plot objects
-    plot1 = fig1.getroot()
-    plot2 = fig2.getroot()
+    plot1 = sk1.getroot()
+    plot2 = sk2.getroot()
     plot1.moveto(0, 0, scale=fig2_normscale)
     plot2.moveto(0 + displacement[0], 0 + displacement[1], scale=fig1_normscale)
 
