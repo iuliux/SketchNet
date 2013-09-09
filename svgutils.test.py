@@ -1,13 +1,5 @@
 import svgutils.transform as sg
-import math
-
-
-def line_angle(line):
-    p1, p2 = line
-    xDiff = p2[0] - p1[0]
-    yDiff= p2[1] - p1[1]
-
-    return math.degrees(math.atan2(yDiff, xDiff))
+import geomutils
 
 
 def register_sketches(sk1, sk2, mp1=1, mp2=1):
@@ -22,8 +14,8 @@ def register_sketches(sk1, sk2, mp1=1, mp2=1):
     rg2 = parse_line(sk2.find_id('MP_' + str(mp2) + '_r').root)
 
     # Compute scales to make the two figures match in size
-    fig1scale = math.sqrt((up1[0][0] - up1[1][0])**2 + (up1[0][1] - up1[1][1])**2)
-    fig2scale = math.sqrt((up2[0][0] - up2[1][0])**2 + (up2[0][1] - up2[1][1])**2)
+    fig1scale = geomutils.line_len(up1)
+    fig2scale = geomutils.line_len(up2)
     midscale = (fig1scale + fig2scale) / 2.  # The average of the two scales
     fig1_normscale = fig1scale / midscale
     fig2_normscale = fig2scale / midscale
@@ -41,17 +33,16 @@ def register_sketches(sk1, sk2, mp1=1, mp2=1):
     plot2.moveto(0 + displacement[0], 0 + displacement[1], scale=fig1_normscale)
 
     # Rotation
-    plot1.rotate(-90 - line_angle(up1), up1[0][0], up1[0][1])
-    plot2.rotate(-90 - line_angle(up2), up2[0][0], up2[0][1])
+    plot1.rotate(-90 - geomutils.line_angle(up1), up1[0][0], up1[0][1])
+    plot2.rotate(-90 - geomutils.line_angle(up2), up2[0][0], up2[0][1])
 
     # TODO: Flip if needed
 
     # Create new SVG figure
-    fig = sg.SVGFigure("1500px", "1500px")
+    fig = sg.SVGFigure("1500px", "1500px")  # FIXME: hardcoded size
 
     # Append plots and labels to figure
     fig.append([plot1, plot2])
-
     return fig
 
 
