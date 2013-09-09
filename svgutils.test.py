@@ -46,11 +46,17 @@ def register_sketches(sk1, sk2, mp1=1, mp2=1):
     return fig
 
 
-# load matpotlib-generated figures
-fig1 = sg.fromfile('mpt1.svg')
-fig2 = sg.fromfile('mpt2.svg')
+def load_sketch(fname):
+    return sg.fromfile(fname)
 
-# save generated SVG files
-regfig = register_sketches(fig1, fig2)
 
-regfig.save("fig_final.svg")
+if __name__ == '__main__':
+    # Load test figures
+    fig1 = load_sketch('mpt1.svg')
+    fig2 = load_sketch('mpt2.svg')
+
+    # Match and combine the two figures
+    regfig = register_sketches(fig1, fig2)
+
+    # Save generated SVG file
+    regfig.save("fig_final.svg")
