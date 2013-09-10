@@ -2,16 +2,16 @@ import svgutils.transform as sg
 import geomutils
 
 
-def register_sketches(sk1, sk2, mp1=1, mp2=1):
+def register_sketches(skname1, sk1, skname2, sk2, mp1=1, mp2=1):
     def parse_line(elem):
         return ((float(elem.get('x1')), float(elem.get('y1'))),
                 (float(elem.get('x2')), float(elem.get('y2'))))
 
     # Get mounting points guide lines
-    up1 = parse_line(sk1.find_id('MP_' + str(mp1) + '_u').root)
-    rg1 = parse_line(sk1.find_id('MP_' + str(mp1) + '_r').root)
-    up2 = parse_line(sk2.find_id('MP_' + str(mp2) + '_u').root)
-    rg2 = parse_line(sk2.find_id('MP_' + str(mp2) + '_r').root)
+    up1 = parse_line(sk1.find_id('MP_' + skname1 + '_' + str(mp1) + '_u').root)
+    rg1 = parse_line(sk1.find_id('MP_' + skname1 + '_' + str(mp1) + '_r').root)
+    up2 = parse_line(sk2.find_id('MP_' + skname2 + '_' + str(mp2) + '_u').root)
+    rg2 = parse_line(sk2.find_id('MP_' + skname2 + '_' + str(mp2) + '_r').root)
 
     # Compute scales to make the two figures match in size
     fig1scale = geomutils.line_len(up1)
@@ -46,17 +46,19 @@ def register_sketches(sk1, sk2, mp1=1, mp2=1):
     return fig
 
 
-def load_sketch(fname):
-    return sg.fromfile(fname)
+def load_sketch(figname):
+    return sg.fromfile(figname + '.svg')
 
 
 if __name__ == '__main__':
+    figname1 = 'mpt1'
+    figname2 = 'mpt2'
     # Load test figures
-    fig1 = load_sketch('mpt1.svg')
-    fig2 = load_sketch('mpt2.svg')
+    fig1 = load_sketch(figname1)
+    fig2 = load_sketch(figname2)
 
     # Match and combine the two figures
-    regfig = register_sketches(fig1, fig2)
+    regfig = register_sketches(figname1, fig1, figname2, fig2)
 
     # Save generated SVG file
     regfig.save("fig_final.svg")
