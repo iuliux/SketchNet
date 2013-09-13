@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<svg width="580" height="400" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path transform="rotate(50.4073 250.758 136.767)" id="svg_4" d="m254.983032,98.767426l-34.225159,65.203491l22.195129,-12.336548l3.588867,23.133057l34.216003,-65.212784l-25.774841,-10.787216zm5.239563,19.960197c-1.697388,-0.708557 -2.426147,-2.514153 -1.632385,-4.037971c0.802002,-1.516846 2.822571,-2.167419 4.519958,-1.458862s2.435303,2.521126 1.633301,4.037971s-2.814331,2.175537 -4.520874,1.458862z" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="139.5" x2="215.5" y1="146.5" x1="180.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_6" y2="153.5" x2="206.5" y1="160.5" x1="171.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="MP_flying-thing_1_u" y2="115.5" x2="174.5" y1="154" x1="174.5" fill-opacity="null" stroke-opacity="null" stroke-width="3.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="MP_flying-thing_1_r" y2="154" x2="199" y1="154" x1="175" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+ </g>
+</svg>
