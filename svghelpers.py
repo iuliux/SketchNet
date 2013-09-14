@@ -1,11 +1,16 @@
 import svgutils.transform as sg
 import geomutils
 
+xmlnsmap = {'svg': 'http://www.w3.org/2000/svg'}
+
 
 def register_sketches(skname1, sk1, skname2, sk2, mp1=1, mp2=1):
     def parse_line(elem):
         return ((float(elem.get('x1')), float(elem.get('y1'))),
                 (float(elem.get('x2')), float(elem.get('y2'))))
+
+    mpstart1 = 'MP_' + skname1
+    print sk1.root.xpath('//svg:line[starts-with(@id, "'+mpstart1+'")]', namespaces=xmlnsmap)
 
     # Get mounting points guide lines
     up1 = parse_line(sk1.find_id('MP_' + skname1 + '_' + str(mp1) + '_u').root)
@@ -51,7 +56,7 @@ def load_sketch(figname):
 
 
 if __name__ == '__main__':
-    figname1 = 'mpt1'
+    figname1 = 'flying-thing'
     figname2 = 'mpt2'
     # Load test figures
     fig1 = load_sketch(figname1)

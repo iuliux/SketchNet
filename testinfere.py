@@ -26,10 +26,10 @@ if __name__ == '__main__':
 
     print kb
 
-    fig1 = load_sketch('mpt1')
+    fig1 = load_sketch('flying-thing')
     fig2 = load_sketch('mpt2')
 
-    regfig = register_sketches('mpt1', fig1, 'mpt2', fig2)
+    regfig = register_sketches('flying-thing', fig1, 'mpt2', fig2)
 
     # Save generated SVG file
     regfig.save("fig_final.svg")

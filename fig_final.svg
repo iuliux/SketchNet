@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='ASCII' standalone='yes'?>
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1500px" height="1500px" viewbox="0 0 1500px 1500px">
   <g>
-    <g transform=" translate(0, 0) scale(0.523934070403) rotate(0.000000 66.500000 373.500000)"><!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
-
+    <g transform=" translate(0, 0) scale(1.18035982806) rotate(0.000000 174.500000 154.000000)"><!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
  <g>
   <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
   <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
    <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
   </g>
  </g>
  <g>
   <title>Layer 1</title>
-  <path stroke="#000" id="svg_1" d="m28.127502,63.099213l0,0c0,-22.046158 27.182484,-39.91671 60.724075,-39.91671l27.604897,0l0,0l132.500053,0l248.436417,0c16.108215,0 31.556091,4.204855 42.94281,11.691696c11.386719,7.485519 17.791748,17.638336 17.791748,28.225014l0,99.792374l0,0l0,59.874451l0,0c0,22.046082 -27.192383,39.917557 -60.734558,39.917557l-248.436417,0l-173.098618,101.498932l40.598564,-101.498932l-27.604897,0c-33.541592,0 -60.724075,-17.871475 -60.724075,-39.917557l0,0l0,-59.874451l0,0l0,-99.792374z" stroke-width="1.5" fill="#fff"/>
- </g>
- <g>
-  <line stroke="#000" stroke-width="1.5" id="MP_mpt1_1_u" y2="217.3" x2="66.5" y1="373.5" x1="66.5"/>
-  <line stroke="#000" stroke-width="1.5" id="MP_mpt1_1_r" y2="374.5" x2="125.5" y1="373.5" x1="66.5"/>
+  <path transform="rotate(50.4073 250.758 136.767)" id="svg_4" d="m254.983032,98.767426l-34.225159,65.203491l22.195129,-12.336548l3.588867,23.133057l34.216003,-65.212784l-25.774841,-10.787216zm5.239563,19.960197c-1.697388,-0.708557 -2.426147,-2.514153 -1.632385,-4.037971c0.802002,-1.516846 2.822571,-2.167419 4.519958,-1.458862s2.435303,2.521126 1.633301,4.037971s-2.814331,2.175537 -4.520874,1.458862z" stroke-width="1.5" stroke="#000" fill="#fff"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_5" y2="139.5" x2="215.5" y1="146.5" x1="180.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="svg_6" y2="153.5" x2="206.5" y1="160.5" x1="171.5" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="MP_flying-thing_1_u" y2="115.5" x2="174.5" y1="154" x1="174.5" fill-opacity="null" stroke-opacity="null" stroke-width="3.5" stroke="#000" fill="none"/>
+  <line stroke-linecap="null" stroke-linejoin="null" id="MP_flying-thing_1_r" y2="154" x2="199" y1="154" x1="175" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
  </g>
 </g>
-    <g transform=" translate(-55.9364389884, -333.480260465) scale(1.4760659296) rotate(45.000000 61.500000 358.500000)"><!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+    <g transform=" translate(155.564919422, -112.065588119) scale(0.81964017194) rotate(45.000000 61.500000 358.500000)"><!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
 
  <g>
   <title>background</title>
