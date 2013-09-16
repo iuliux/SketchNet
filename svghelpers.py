@@ -4,13 +4,30 @@ import geomutils
 xmlnsmap = {'svg': 'http://www.w3.org/2000/svg'}
 
 
+def _get_MP(skname, sk, mp_id):
+    '''
+    skname = the name of the sketch
+    sk = sketch object returned by load_sketch()
+    nMP = the number ID of the MountingPoint to be returned
+    '''
+    mpstart = 'MP_' + skname
+    if mp_id:
+        mpstart += '_' + str(mp_id)
+
+    baseQuery = '//svg:line[starts-with(@id, "%s")'
+    endswithQuery = '"%s" = substring(@id, string-length(@id) - 1)]'
+    u = sk.root.xpath(baseQuery % mpstart + ' and ' + endswithQuery % '_u', namespaces=xmlnsmap)
+    r = sk.root.xpath(baseQuery % mpstart + ' and ' + endswithQuery % '_r', namespaces=xmlnsmap)
+
+    return (u, r)
+
+
 def register_sketches(skname1, sk1, skname2, sk2, mp1=1, mp2=1):
     def parse_line(elem):
         return ((float(elem.get('x1')), float(elem.get('y1'))),
                 (float(elem.get('x2')), float(elem.get('y2'))))
 
-    mpstart1 = 'MP_' + skname1
-    print sk1.root.xpath('//svg:line[starts-with(@id, "'+mpstart1+'")]', namespaces=xmlnsmap)
+    print _get_MP(skname1, sk1, mp1)
 
     # Get mounting points guide lines
     up1 = parse_line(sk1.find_id('MP_' + skname1 + '_' + str(mp1) + '_u').root)
@@ -52,6 +69,9 @@ def register_sketches(skname1, sk1, skname2, sk2, mp1=1, mp2=1):
 
 
 def load_sketch(figname):
+    '''
+    Loads SVG sketch file and returns an object
+    '''
     return sg.fromfile(figname + '.svg')
 
 
